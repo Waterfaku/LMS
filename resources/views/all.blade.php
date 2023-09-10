@@ -144,7 +144,7 @@
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('homepage') }}">
+                        <a class="nav-link" href="">
                             <i class="fa-solid fa-house"></i>
                             Homepage
                         </a>
@@ -152,7 +152,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('class') }}">
+                        <a class="nav-link" href="">
                             <i class="fa-solid fa-bars"></i>
                             Courses
                         </a>
@@ -160,7 +160,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('timetable') }}">
+                        <a class="nav-link" href="">
                             <i class="fa-regular fa-calendar"></i>
                             Timetable
                         </a>
@@ -168,7 +168,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('forum') }}">
+                        <a class="nav-link" href="">
                             <i class="fa-regular fa-message"></i>
                             Forum
                         </a>
@@ -184,7 +184,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('role.index') }}">
+                        <a class="nav-link" href="">
                             <i class="fa-solid fa-graduation-cap"></i>
                             Role
                         </a>

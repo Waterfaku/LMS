@@ -18,6 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/roste', function () {
+    return view('roster');
+})->name('homepage');
+
+Route::get('/roster/{id}', function () {
+    return view('roster');
+})->name('roster');
+
+Route::get('/inclass/{classId}', [ClassController::class,'teacherRoster'])->name('class.student-roster');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -32,6 +43,19 @@ require __DIR__.'/auth.php';
 
 
 
+Route::get('/student/h', function () {
+    return view('student.h');
+})->middleware(['auth:student', 'verified'])->name('student.h');
+
+require __DIR__.'/studentauth.php';
+
+Route::get('/teacher/h', function () {
+    return view('teacher.h');
+})->middleware(['auth:teacher', 'verified'])->name('teacher.h');
+
+require __DIR__.'/teacherauth.php';
+
+/* Admin */
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->middleware(['auth:admin', 'verified'])->name('admin.dashboard');
